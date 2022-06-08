@@ -1,8 +1,10 @@
 package com.tron.okhttp.utils;
 
 import com.alibaba.fastjson.JSONObject;
-import okhttp3.Protocol;
-import org.bouncycastle.util.encoders.Hex;
+import com.google.protobuf.ByteString;
+import org.tron.trident.core.ApiWrapper;
+import org.tron.trident.proto.Chain;
+import org.tron.trident.proto.Chain.Transaction;
 
 import java.io.IOException;
 

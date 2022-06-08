@@ -98,6 +98,36 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>3.11.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-stub -->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>1.47.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.luhuiguo.grpc/grpc-netty-shaded -->
+        <dependency>
+            <groupId>com.luhuiguo.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
+            <version>1.43.2.GM</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.grpc/grpc-protobuf -->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>1.47.0</version>
+        </dependency>
+
+
+
+
 
     </dependencies>
 </project>
