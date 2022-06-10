@@ -67,12 +67,16 @@ public class ApiWapperTransactionHttp {
     // trunsferUSDT();
      //trunsferTRX();
 
-    createAccount();
+    //createAccount();
 
 
 
   }
 
+  /**
+   * 创建账号，并激活
+   * @throws IllegalException
+   */
   public static void createAccount() throws IllegalException {
     KeyPair keyPair = KeyPair.generate();
 
