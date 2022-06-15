@@ -17,15 +17,15 @@ import org.tron.trident.utils.Numeric;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class ApiWapperTransactionHttp {
+public class TronApiUtils {
 
-  public static ApiWrapper getApiWrapper() {
+  public static ApiWrapper getApiWrapper(String hexPrivateKey) {
     //return ApiWrapper.ofMainnet(TronConstant.privateKey, TronConstant.apiKey);
-     return ApiWrapper.ofShasta(TronConstant.privateKey);
+     return ApiWrapper.ofShasta(hexPrivateKey);
   }
 
   public static void trunsferTRX() throws IllegalException, InterruptedException {
-    ApiWrapper client = getApiWrapper();
+    ApiWrapper client = getApiWrapper(TronConstant.privateKey);
     Response.TransactionExtention transactionExtention =
         client.transfer(
             "TA7weEqvrbyMygQmbNbFuAi2ndEBUAp45h", "TQaiH8b4LBFPBfd78i7mS2RZNpPWSaFx3B", 1000000L);
