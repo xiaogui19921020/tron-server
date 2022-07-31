@@ -7,7 +7,7 @@ public class TronConstant {
   public static String ownerAddress = "TA7weEqvrbyMygQmbNbFuAi2ndEBUAp45h"; // 钱包地址
   /** 钱包私钥，创建一个钱包，用这个钱包去发行usdt合约 */
   public static String privateKey =
-      "e088f372ffaf11b33900e5fd36963abdc64c4819386436541347bb4d9af17dd708";
+      "e088f372ffaf11b33900e5fd369abdc64c4819386436541347bb4d9af17dd708";
   /** TRC20合约地址 */
   public static String TRC20_USDT_ADDRESS = "TAgaqV6dV6Fevud6CZGDFoie7P6NAoujHo";
   /** TRC20合约精度 */
