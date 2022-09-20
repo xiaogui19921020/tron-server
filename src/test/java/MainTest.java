@@ -63,6 +63,14 @@ public class MainTest {
     log.info("交易状态:{}", status);
   }
 
+  /** 查询TRC20交易记录 */
+  @Test
+  @SneakyThrows
+  public void getTransactionsTRC20() {
+    String json = tronApiService.getTransactionsTRC20(config.getOwnerAddress(), false, false);
+    log.info("交易记录:{}", json);
+  }
+
   /** 私钥转钱包地址 */
   @Test
   @SneakyThrows
