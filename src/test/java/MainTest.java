@@ -3,7 +3,7 @@ import com.tron.config.TronServiceConfig;
 import com.tron.service.TronApiService;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -40,7 +40,7 @@ public class MainTest {
   public void trunsferTRX() {
     String txid =
         tronApiService.trunsferTRX(
-            config.getHexPrivateKey(), config.getOwnerAddress(), toAddress, 100000000L);
+            config.getHexPrivateKey(), config.getOwnerAddress(), toAddress, 1000000L);
     log.info("交易ID:{}", txid);
     Thread.sleep(5000);
     String status = tronApiService.getTransactionStatusById(txid);
@@ -56,7 +56,7 @@ public class MainTest {
             config.getHexPrivateKey(),
             config.getOwnerAddress(),
             toAddress,
-            config.getTrc20Decimals().multiply(new BigInteger("10")));
+            config.getTrc20Decimals().multiply(new BigInteger("1")));
     log.info("交易ID:{}", txid);
     Thread.sleep(5000);
     String status = tronApiService.getTransactionStatusById(txid);
