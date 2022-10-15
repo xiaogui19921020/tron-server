@@ -224,4 +224,11 @@ public class TronApiService {
     byte[] base58Byte = Base58Check.base58ToBytes(base58);
     System.out.println(Hex.toHexString(base58Byte));
   }
+
+  public static void main(String[] args) {
+    String base58 = "TQFV9kQbFjr7p1t4vRZKU43m2np28NXUXc";
+    System.out.println(base58);
+    byte[] base58Byte = Base58Check.base58ToBytes(base58);
+    System.out.println(Hex.toHexString(base58Byte));
+  }
 }
