@@ -81,4 +81,15 @@ public class MainTest {
     String address = Base58Check.bytesToBase58(rawAddr);
     log.info("地址:{}", address);
   }
+
+
+  /** 创建账号，并激活 */
+  @Test
+  @SneakyThrows
+  public void createWallet() {
+    KeyPair keyPair = KeyPair.generate();
+    log.info(" address：{}, PrivateKey：{}", keyPair.toBase58CheckAddress(), keyPair.toPrivateKey());
+    tronApiService.createAccount(
+        keyPair.toPrivateKey(), keyPair.toBase58CheckAddress(), config.getHexPrivateKey());
+  }
 }
