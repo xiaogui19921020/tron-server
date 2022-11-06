@@ -55,8 +55,8 @@ public class MainTest {
         tronApiService.trunsferUSDT(
             config.getHexPrivateKey(),
             config.getOwnerAddress(),
-            toAddress,
-            config.getTrc20Decimals().multiply(new BigInteger("1")));
+            "TKXP6StDTJXfWvbvM3EWjm7y7JXP9LpwkF",
+            config.getTrc20Decimals().multiply(new BigInteger("100")));
     log.info("交易ID:{}", txid);
     Thread.sleep(5000);
     String status = tronApiService.getTransactionStatusById(txid);
